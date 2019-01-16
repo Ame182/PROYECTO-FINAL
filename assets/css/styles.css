@@ -309,6 +309,34 @@ footer img{
 /* termina Organigrama */
 
 /* Galeria */
+.jumbotron {	
+	margin-top: 0px;
+	text-align: center;
+	color: white;
+	background-image: url(../img/BANNER3.jpg);
+	background-size: cover;
+}
+
+.thumbnail{
+
+	border-color: #cccccc;
+	border-width: 6px;
+	border-radius: 10px;
+	padding: 0px;
+}
+
+.thumbnail h3{
+	padding: 1px;
+}
+
+.thumbnail p{
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.row {
+	clear: both;
+}
 
 #galeria-fotos {
 	filter: saturate(0%);
@@ -322,3 +350,12 @@ footer img{
         transition: 1s;
  }
 
+
+/* Contac */
+.teatinos iframe {
+	width: 350px;
+	height: 600px;
+	display: inline-block;
+	margin-left: 300px;
+
+}

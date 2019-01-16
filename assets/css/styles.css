@@ -14,10 +14,19 @@ i{
 
 /* Global Styles termina */
 
+h1{
+	display: inline-block;
+	background-color: rgba(2,9,0,.2);
+	color: white;
+	border-radius: 5px;
+	padding: 20px 5px;
+
+}
+
 .signin{
 	width: 100%;
 	height: 50px;
-	background-color: #00A2CC;
+	background-color: #ffffff;
 	color: white;
 	padding: 5px;
 	display: inline-block;
@@ -25,38 +34,37 @@ i{
 	margin-top: -30px;
 }
 
+
 .container-fluid{
 	background-color: white;
 	border: 0;
 }
+
 .navbar-default .navbar-nav>li>a{
 	color: #00A2CC;
 }
+
 .navbar-brand {
 	background: url(../img/logo.png) no-repeat center / auto 100% transparent;
 	text-indent: -10000px;
 	width: 150px;
 	margin-left: 6em;
 	height: 60px;
-
+	
 }
 
-header.page-header {
-	height: 60vh;
-	margin-top: -20px;
-	background: url(../img/LEV_2493.jpg) no-repeat center / cover transparent;
-	text-align: center;
-	padding-top: 200px;
-	margin-bottom: 0px;
-	display: block;
+.navbar {
+z-index: auto;
 }
 
-header.page-header h1{
-	display: inline-block;
-	background-color: rgba(2,9,0,.5);
-	color: white;
-	border-radius: 5px;
-	padding: 20px 5px;
+
+header {
+	margin-top: 50px;
+}
+
+.container .cuerpo{
+	margin-top: 200px;
+	padding-top: 40px;
 }
 
 /*Section Mision y Filosofia*/
@@ -189,3 +197,128 @@ footer img{
 .jumbotron{
 	background-color: #FFFFFF;
 }
+
+/*ORGANIGRAMA*/
+
+
+
+.organigrama * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.organigrama ul {
+	padding-top: 20px;
+  position: relative;
+}
+
+.organigrama li {
+	float: left;
+  text-align: center;
+	list-style-type: none;
+	padding: 20px 5px 0px 5px;
+  position: relative;
+}
+
+.organigrama li::before, .organigrama li::after {
+	content: '';
+	position: absolute;
+  top: 0px;
+  right: 50%;
+	border-top: 1px solid #f80;
+	width: 50%;
+  height: 20px;
+}
+
+.organigrama li::after{
+	right: auto;
+  left: 50%;
+	border-left: 1px solid #f80;
+}
+
+.organigrama li:only-child::before, .organigrama li:only-child::after {
+	display: none;
+}
+
+.organigrama li:only-child {
+  padding-top: 0;
+}
+
+.organigrama li:first-child::before, .organigrama li:last-child::after{
+	border: 0 none;
+}
+
+.organigrama li:last-child::before{
+	border-right: 1px solid #f80;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+
+.organigrama li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+.organigrama ul ul::before {
+	content: '';
+	position: absolute;
+  top: 0;
+  left: 50%;
+	border-left: 1px solid #f80;
+	width: 0;
+  height: 20px;
+}
+
+.organigrama li a {
+	border: 1px solid #f80;
+	padding: 1em 0.75em;
+	text-decoration: none;
+	color: #333;
+  background-color: rgba(255,255,255,0.5);
+	font-family: arial, verdana, tahoma;
+	font-size: 0.85em;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.organigrama li a:hover {
+	border: 1px solid #fff;
+	color: #ddd;
+  background-color: rgba(255,128,0,0.7);
+	display: inline-block;
+}
+
+.organigrama > ul > li > a {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.organigrama > ul > li > ul > li > a {
+  width: 8em;
+}
+
+
+
+/* termina Organigrama */
+
+/* Galeria */
+
+#galeria-fotos {
+	filter: saturate(0%);
+	size: 40px;
+
+ } 
+
+
+.satura{
+        filter: saturate(100%);
+        transition: 1s;
+ }
+

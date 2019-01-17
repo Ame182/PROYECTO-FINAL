@@ -37,7 +37,7 @@
 	        <li><a href="../index.html">Inicio</a></li>
 	        <li><a href="nosotros.html">Nosotros</a></li>
 	        <li><a href="organi.html">Organigrama</a></li>
-	        <li><a href="calendario.html">Calendario</a></li>
+	        <li><a href="ticket.html">Sistema Ticket</a></li>
 	        <li><a href="contact.html">Contacto</a></li>
 	        <li><a href="documents.html">Galería</a></li>
 	      </ul>
@@ -54,23 +54,66 @@
 	</div>
 	
 	<!-- Comienza el Organigrama -->
-	<div class="organigrama col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-	    <ul>
-	        <li>
-	          <a href="#" class="gg">Gerente General</a>
-	            <ul>
-	               
-	                <li><a href="#" class="vt">Comercial</a></li>
-	                <li><a href="#" class="mkt">Marketing</a></li>
-	                <li><a href="#" class="fin">Finanzas</a></li>
-	                <li><a href="#" class="abs">Abastecimiento</a></li>
-	                <li><a href="#" class="cl">Clínico</a></li>
-	                <li><a href="#" class="con">Contabilidad</a></li>
-	                
-	            </ul>
-	        </li>
-	    </ul>
+	<div class="container org">
+		<div class="organigrama col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+		    <ul>
+		        <li>
+		          <a href="#" class="gg">Gerente General</a>
+		            <ul class="organigrama">
+		               
+		                <li><a href="#" class="vt">Comercial</a></li>
+		                <li><a href="#" class="mkt">Marketing</a></li>
+		                <li><a href="#" class="fin">Finanzas</a></li>
+		                <li><a href="#" class="abs">Abastecimiento</a></li>
+		                <li><a href="#" class="cl">Clínico</a></li>
+		                <li><a href="#" class="con">Contabilidad</a></li>
+		                
+		            </ul>
+		        </li>
+		    </ul>
+		</div>
 	</div>
+	
+
+	<footer>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-1">
+				<div class="col-md-5" style="text-align: left padding-top: 30px margin-left: 10px margin-left: 10px ">
+					<p><strong>Contacto<br><br>
+						Uno Salud Dental</strong><br>
+						
+						Coyancura 2999<br> 
+						 22170811 <br><br>
+						<a href="contacto@unosalud.cl">	contacto@unosalud.cl</a> <br>
+						<a href="www.facebook.com">
+							<i class="fab fa-facebook-square">
+							</i>
+						</a>
+						<a href="www.instagram.com">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</p>
+				</div>
+				<div class="col-md-6" style="text-align: left">
+					<p><strong>Suscribete</strong><br>
+					Nosotros te contactaremos.</p>
+					<form class="form-inline">
+						<div class="form-group">
+						<label for="exampleInputName2">Name</label>
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+						</div>
+						<div class="form-group">
+						<label for="exampleInputEmail2">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+						</div>
+						<br>
+						<button type="submit" id="register_button" class="btn btn-primary">Registro</button>
+					</form>	
+				</div>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26637.979949894452!2d-70.66017603987888!3d-33.4298269123684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a5b7569a55%3A0x278fc5d87989f03!2sUno+Salud+Dental!5e0!3m2!1sen!2scl!4v1547608890300" width="300" height="225" frameborder="0" style="border:0" allowfullscreen>Ubicános</iframe>
+		</div>
+	</footer>
 
 		<!-- Jquery 3.3.1 -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
